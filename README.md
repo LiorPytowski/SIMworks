@@ -151,4 +151,4 @@ SIMworks requires the following update sites:
 ---
 
 ## References
-For references related to SIMworks dependencies, see this page: link.
+For references related to SIMworks dependencies, see this page: [link](https://github.com/LiorPytowski/SIMworks/blob/main/References.md).
