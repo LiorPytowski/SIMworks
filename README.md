@@ -8,23 +8,23 @@
 - [Available Features](#available-features)
   - [1. Data Checks](#1-data-checks)
     - [1.1. Raw Data](#11-raw-data)
-      - [0_Format Converter](#111-0_format-converter)
-      - [1_Channel Intensity Profile](#112-1_channel-intensity-profile)
-      - [2_Motion & Illumination Variation](#113-2_motion--illumination-variation)
-      - [3_Fourier Projection](#114-3_fourier-projection)
-      - [4_Modulation Contrast](#115-4_modulation-contrast)
-      - [5_Raw SI Data to Projected-Widefield](#116-5_raw-si-data-to-projected-widefield)
+      - [0_Format Converter]
+      - [1_Channel Intensity Profile]
+      - [2_Motion & Illumination Variation]
+      - [3_Fourier Projection]
+      - [4_Modulation Contrast]
+      - [5_Raw SI Data to Projected-Widefield]
     - [1.2. Reconstructed Data](#12-reconstructed-data)
-      - [1_Intensity Histograms](#121-1_intensity-histograms)
-      - [2_Spherical Aberration Mismatch](#122-2_spherical-aberration-mismatch)
-      - [3_Fourier Plots](#123-3_fourier-plots)
+      - [1_Intensity Histograms]
+      - [2_Spherical Aberration Mismatch]
+      - [3_Fourier Plots]
   - [2. Image Pre-processing – Augmentation](#2-image-pre-processing--augmentation)
-    - [1_Pre-processing – Augmentation](#21-1_pre-processing--augmentation)
-    - [2_Nuclei Segmentation](#22-2_nuclei-segmentation)
+    - [1_Pre-processing – Augmentation]
+    - [2_Nuclei Segmentation]
   - [3. Image Analysis](#3-image-analysis)
-    - [1_Foci Segmentation](#31-1_foci-segmentation)
-    - [2_Chromatin Classification](#32-2_chromatin-classification)
-    - [3_Foci vs Chromatin Analysis](#33-3-foci-vs-chromatin-analysis)
+    - [1_Foci Segmentation]
+    - [2_Chromatin Classification]
+    - [3_Foci vs Chromatin Analysis]
 - [Dependencies](#dependencies)
 - [Installation](#installation)
 - [References](#References)
