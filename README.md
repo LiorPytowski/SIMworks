@@ -8,23 +8,23 @@
 - [Available Features](#available-features)
   - [1. Data Checks](#1-data-checks)
     - [1.1. Raw Data](#11-raw-data)
-      - [0_Format Converter]
-      - [1_Channel Intensity Profile]
-      - [2_Motion & Illumination Variation]
-      - [3_Fourier Projection]
-      - [4_Modulation Contrast]
-      - [5_Raw SI Data to Projected-Widefield]
+      - 0_Format Converter
+      - 1_Channel Intensity Profile
+      - 2_Motion & Illumination Variation
+      - 3_Fourier Projection
+      - 4_Modulation Contrast
+      - 5_Raw SI Data to Projected-Widefield
     - [1.2. Reconstructed Data](#12-reconstructed-data)
-      - [1_Intensity Histograms]
-      - [2_Spherical Aberration Mismatch]
-      - [3_Fourier Plots]
+      - 1_Intensity Histograms
+      - 2_Spherical Aberration Mismatch
+      - 3_Fourier Plots
   - [2. Image Pre-processing – Augmentation](#2-image-pre-processing--augmentation)
-    - [1_Pre-processing – Augmentation]
-    - [2_Nuclei Segmentation]
+    - 1_Pre-processing – Augmentation
+    - 2_Nuclei Segmentation
   - [3. Image Analysis](#3-image-analysis)
-    - [1_Foci Segmentation]
-    - [2_Chromatin Classification]
-    - [3_Foci vs Chromatin Analysis]
+    - 1_Foci Segmentation
+    - 2_Chromatin Classification
+    - 3_Foci vs Chromatin Analysis
 - [Dependencies](#dependencies)
 - [Installation](#installation)
 - [References](#References)
