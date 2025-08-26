@@ -140,7 +140,7 @@ SIMworks requires the following update sites:
 2. **Install the Distance Analysis (DiAna) plugin**  
    - Install **DiAna (Gilles et al., 2017)** from:  
      [https://imagej.net/plugins/distance-analysis](https://imagej.net/plugins/distance-analysis)  
-     or use an archived version from this manuscript’s repository (GitHub link).  
+     or use an archived version from this repository (GitHub link).  
    - To install, place the `DiAna_.jar` file in the **plugins** folder of your Fiji directory.  
      In Fiji, you can find this folder via:  
      `File › Show Folder › Plugins`.  
