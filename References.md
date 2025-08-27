@@ -53,7 +53,7 @@ With code from:
 
 ---
 
-### And finally, last but not least:
+### ImageJ / Fiji:
 1.	Schindelin, J. et al. Fiji: an open-source platform for biological-image analysis. Nature Methods 9, 676 (2012).
 2.	Schindelin, J., Rueden, C. T., Hiner, M. C. & Eliceiri, K. W. The ImageJ ecosystem: An open platform for biomedical image analysis. Mol. Reprod. Dev. 82, 518–529 (2015).
 3.	Schneider, C. A., Rasband, W. S. & Eliceiri, K. W. NIH Image to ImageJ: 25 years of image analysis. Nat Methods 9, 671–675 (2012).
