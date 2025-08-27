@@ -1,6 +1,6 @@
 # References
 
-SIMworks relies heavily on various rely on plugins and libraries.
+SIMworks relies heavily on various plugins and libraries.
 
 ---
 
