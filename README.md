@@ -18,13 +18,15 @@
       - 1_Intensity Histograms
       - 2_Spherical Aberration Mismatch
       - 3_Fourier Plots
-  - [2. Image Pre-processing – Augmentation](#2-image-pre-processing--augmentation)
-    - 1_Pre-processing – Augmentation
-    - 2_Nuclei Segmentation
+  - [2. Image Pre-processing & Augmentation](#2-image-pre-processing-&-augmentation)
+    - 1_Pre-processing
+    - 2_Main Object Segmentation
   - [3. Image Analysis](#3-image-analysis)
-    - 1_Foci Segmentation
+    - 1a_Foci Segmentation
+	- 1b_Other Structure Segmentation
     - 2_Chromatin Classification
-    - 3_Foci vs Chromatin Analysis
+    - 3_Subobject vs Chromatin Analysis
+	- 4_Foci Randomisation
 - [Dependencies](#dependencies)
 - [Installation](#installation)
 - [Test Dataset](#test-dataset)
@@ -80,15 +82,15 @@
 
 ---
 
-### 2. Image Pre-processing – Augmentation
-- **2.1. 1_Pre-processing – Augmentation**  
+### 2. Image Pre-processing & Augmentation
+- **2.1. 1_Pre-processing**  
   Batch options:  
   - Threshold + 16-bit Conversion  
   - Bandpass filtering  
   - Modulation Contrast masking  
   - Channel registration  
 
-- **2.2. 2_Nuclei Segmentation**  
+- **2.2. 2_Main Object Segmentation**  
   Creates one file per nucleus, optionally excluding nuclei at edges or keeping only the largest.  
   **Options:**  
   - Split touching nuclei?  
@@ -98,18 +100,26 @@
 ---
 
 ### 3. Image Analysis
-- **3.1. 1_Foci Segmentation**  
+- **3.1. 1a_Foci Segmentation**  
   Segments two foci channels and measures nearest-neighbour distances. Units match pixel size in image properties.  
+  
+- **3.2. 1b_Other Structure Segmentation**  
+  Segments a non-foci channel. Units match pixel size in image properties.  
 
-- **3.2. 2_Chromatin Classification**  
+- **3.3. 2_Chromatin Classification**  
   Classifies chromatin (Miron, E. et al 2020).  
   **Options:**  
   - Gaussian blur: increase if chromatin has holes  
   - Thresholding method for smooth stack  
   - Optional erosion: erode by morphology, not intensity  
 
-- **3.3. 3_Foci vs Chromatin Analysis**  
+- **3.4. 3_Subobject vs Chromatin Analysis**  
   Analyses foci position relative to chromatin classes. Distances use pixel size units.
+
+- **3.5. 4_Foci Randomisation**
+  Generates synthetic images that contain the same number of foci as the original, but redistributes them to random positions within the chromatin.
+
+  
 
 ---
 
