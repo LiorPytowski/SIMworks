@@ -20,9 +20,9 @@
       - 3_Fourier Plots
 	  
 	- [1.3. Utilities](#13-Utilities)
-	   1_Reconstructed Bandpass Filter Optimisation
-	   2_Reconstructed Threshold and 16-bit Conversion
-	   3_Raw SI Data to Projected-Widefield
+	   - 1_Reconstructed Bandpass Filter Optimisation
+	   - 2_Reconstructed Threshold and 16-bit Conversion
+	   - 3_Raw SI Data to Projected-Widefield
 
   - [2. Image Pre-processing & Augmentation](#2-image-pre-processing-&-augmentation)
     - 1_Pre-processing
