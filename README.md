@@ -13,11 +13,17 @@
       - 2_Motion & Illumination Variation
       - 3_Fourier Projection
       - 4_Modulation Contrast
-      - 5_Raw SI Data to Projected-Widefield
+      -
     - [1.2. Reconstructed Data](#12-reconstructed-data)
       - 1_Intensity Histograms
       - 2_Spherical Aberration Mismatch
       - 3_Fourier Plots
+	  
+	- [1.3. Utilities](#13-Utilities)
+	   1_Reconstructed Bandpass Filter Optimisation
+	   2_Reconstructed Threshold and 16-bit Conversion
+	   3_Raw SI Data to Projected-Widefield
+
   - [2. Image Pre-processing & Augmentation](#2-image-pre-processing-&-augmentation)
     - 1_Pre-processing
     - 2_Main Object Segmentation
@@ -38,24 +44,24 @@
 
 ### 1. Data Checks
 #### 1.1. Raw Data
-- **1.1.1. 0_Format Converter**  
+- **1.1.0_Format Converter**  
   This tool will convert raw data from Zeiss ELYRA or Nikon N-SIM to the DeltaVision OMX format (CPZAT).  
   **Options:**  
   - Input format: Zeiss ELYRA (CZAPT) or Nikon N-SIM (tiled)  
   - Batch processing: Select this option to convert all images in a given directory  
 
-- **1.1.2. 1_Channel Intensity Profile**  
+- **1.1.1_Channel Intensity Profile**  
   Plots the average fluorescence intensity across slices for each channel. Helps to identify issues like photobleaching, unequal intensities between angles, or illumination flicker.  
   **Options:**  
   - Subtract background before plotting: Use this option if image has low signal-to-noise ratio. Draw a ROI in the background when prompted.  
 
-- **1.1.3. 2_Motion & Illumination Variation**  
+- **1.1.2_Motion & Illumination Variation**  
   Generates a false-colour CMY composite image—each illumination angle is assigned a different hue. Features consistent across angles appear white, while motion or uneven illumination appears colored.  
 
-- **1.1.4. 3_Fourier Projection**  
+- **1.1.3_Fourier Projection**  
   Computes maximum intensity projection of log-scaled 2D Fourier transforms across all phases and angles. Reveals distinct first and second order frequency spots indicating SIM pattern quality.  
 
-- **1.1.5. 4_Modulation Contrast**  
+- **1.1.4_Modulation Contrast**  
   Evaluates SIM contrast by computing the normalized ratio of high- vs low-frequency content, highlighting suboptimal modulation or uneven illumination.  
 
 - **1.1.6. 5_Raw SI Data to Projected-Widefield**  
@@ -65,16 +71,16 @@
   - Scale 2x? Scale to match typical reconstructed dimensions  
 
 #### 1.2. Reconstructed Data
-- **1.2.1. 1_Intensity Histograms**  
+- **1.2.1_Intensity Histograms**  
   Shows histograms (black and gray) indicating “negative” value contributions in reconstructions.  
   **Options:**  
   - Discard values below modal value  
   - Discard values below mean from ROI  
 
-- **1.2.2. 2_Spherical Aberration Mismatch**  
+- **1.2.2_Spherical Aberration Mismatch**  
   Shows variations in min/mean slice intensities. Dips may reveal mismatches between sample and PSF.  
 
-- **1.2.3. 3_Fourier Plots**  
+- **1.2.3_Fourier Plots**  
   Generates lateral Fourier Transform visualizations with resolution rings + radial decay profiles.  
   **Options:**  
   - Discard values below zero  
@@ -83,14 +89,14 @@
 ---
 
 ### 2. Image Pre-processing & Augmentation
-- **2.1. 1_Pre-processing**  
+- **2.1_Pre-processing**  
   Batch options:  
   - Threshold + 16-bit Conversion  
   - Bandpass filtering  
   - Modulation Contrast masking  
   - Channel registration  
 
-- **2.2. 2_Main Object Segmentation**  
+- **2.2_Main Object Segmentation**  
   Creates one file per nucleus, optionally excluding nuclei at edges or keeping only the largest.  
   **Options:**  
   - Split touching nuclei?  
@@ -100,23 +106,23 @@
 ---
 
 ### 3. Image Analysis
-- **3.1. 1a_Foci Segmentation**  
+- **3.1a_Foci Segmentation**  
   Segments two foci channels and measures nearest-neighbour distances. Units match pixel size in image properties.  
   
-- **3.2. 1b_Other Structure Segmentation**  
+- **3.1b_Other Structure Segmentation**  
   Segments a non-foci channel. Units match pixel size in image properties.  
 
-- **3.3. 2_Chromatin Classification**  
+- **3.2_Chromatin Classification**  
   Classifies chromatin (Miron, E. et al 2020).  
   **Options:**  
   - Gaussian blur: increase if chromatin has holes  
   - Thresholding method for smooth stack  
   - Optional erosion: erode by morphology, not intensity  
 
-- **3.4. 3_Subobject vs Chromatin Analysis**  
+- **3.3_Subobject vs Chromatin Analysis**  
   Analyses foci position relative to chromatin classes. Distances use pixel size units.
 
-- **3.5. 4_Foci Randomisation**
+- **3.4_Foci Randomisation**
   Generates synthetic images that contain the same number of foci as the original, but redistributes them to random positions within the chromatin.
 
   
