@@ -27,7 +27,7 @@
     - 3_Foci vs Chromatin Analysis
 - [Dependencies](#dependencies)
 - [Installation](#installation)
-- [Test Dataset](#test dataset)
+- [Test Dataset](#test-dataset)
 - [References](#References)
 
 ---
