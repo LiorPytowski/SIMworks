@@ -86,6 +86,11 @@
   - Discard values below zero  
   - Discard values below manual threshold  
 
+#### 1.3. Utilities
+- **1.3.1_Reconstructed Bandpass Filter Optimisation**
+- **1.3.2_Reconstructed Threshold and 16-bit Conversion**  
+- **1.3.3_Raw SI Data to Projected-Widefield**  
+
 ---
 
 ### 2. Image Pre-processing & Augmentation
