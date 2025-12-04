@@ -26,7 +26,7 @@
     - 2_Main Object Segmentation
   - [3. Image Analysis](#3-image-analysis)
     - 1a_Foci Segmentation
-	- 1b_Other Structure Segmentation
+	- 1b_Structure Segmentation
     - 2_Chromatin Classification
     - 3_Subobject vs Chromatin Analysis
 	- 4_Foci Randomisation
@@ -42,9 +42,16 @@
 ### 1. Data Checks
 #### 1.1. Raw Data
 - **1.1.0_Format Converter**  
-  This tool will convert raw data from Zeiss ELYRA or Nikon N-SIM to the DeltaVision OMX format (CPZAT).  
+ This tool will convert various commercial and custom raw data formats to the C; A(Z(P())); T format.  
   **Options:**  
-  - Input format: Zeiss ELYRA (CZAPT) or Nikon N-SIM (tiled)  
+  - Input formats:
+		-C; Z; P           (e.g. Zeiss Lattice SIM or Elyra)
+		-C; Z; A(P())      (e.g. MI-SIM)
+		-C; Z(A(P()))      (e.g. openSIM or Lock-in-SIM)
+		-C; A(Z(P())); T   (e.g. OMX)
+		-C; -; A(Z(P()))   (e.g. ProSIM)
+		-C; T(Z(A(P())))   (e.g. MRC)
+		-Z(P*A), Tiled     (e.g. Nikon N-SIM)
   - Batch processing: Select this option to convert all images in a given directory  
 
 - **1.1.1_Channel Intensity Profile**  
@@ -96,14 +103,14 @@
   - Threshold + 16-bit Conversion  
   - Bandpass filtering  
   - Modulation Contrast masking  
-  - Channel registration  
+  - Channel registration with option to crop margins
 
 - **2.2_Main Object Segmentation**  
-  Creates one file per nucleus, optionally excluding nuclei at edges or keeping only the largest.  
+  Creates one file per main object, optionally excluding objects at edges or keeping only the largest.  
   **Options:**  
-  - Split touching nuclei?  
-  - Keep largest nucleus only?  
-  - Remove nuclei touching image edges in X and Y?  
+  - Split touching objects?  
+  - Keep largest object only?  
+  - Remove objects touching image edges in X and Y?  
 
 ---
 
@@ -111,7 +118,7 @@
 - **3.1a_Foci Segmentation**  
   Segments two foci channels and measures nearest-neighbour distances. Units match pixel size in image properties.  
   
-- **3.1b_Other Structure Segmentation**  
+- **3.1b_Structure Segmentation**  
   Segments a non-foci channel. Units match pixel size in image properties.  
 
 - **3.2_Chromatin Classification**  
