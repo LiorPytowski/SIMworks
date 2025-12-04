@@ -45,13 +45,13 @@
  This tool will convert various commercial and custom raw data formats to the C; A(Z(P())); T format.  
   **Options:**  
   - Input formats:
-   - C; Z; P           (e.g. Zeiss Lattice SIM or Elyra)
-   - C; Z; A(P())      (e.g. MI-SIM)
-   - C; Z(A(P()))      (e.g. openSIM or Lock-in-SIM)
-   - C; A(Z(P())); T   (e.g. OMX)
-   - C; -; A(Z(P()))   (e.g. ProSIM)
-   - C; T(Z(A(P())))   (e.g. MRC)
-   - Z(P*A), Tiled     (e.g. Nikon N-SIM)
+    - C; Z; P           (e.g. Zeiss Lattice SIM or Elyra)
+    - C; Z; A(P())      (e.g. MI-SIM)
+    - C; Z(A(P()))      (e.g. openSIM or Lock-in-SIM)
+    - C; A(Z(P())); T   (e.g. OMX)
+    - C; -; A(Z(P()))   (e.g. ProSIM)
+    - C; T(Z(A(P())))   (e.g. MRC)
+    - Z(P*A), Tiled     (e.g. Nikon N-SIM)
   - Batch processing: Select this option to convert all images in a given directory  
 
 - **1.1.1_Channel Intensity Profile**  
