@@ -152,7 +152,6 @@ SIMworks requires the following update sites:
 - **DIana** *(necessary but not available via Fiji's update sites; must be installed manually; see below)*  
 - **IJBP-plugins**  
 - **ImageScience**  
-- **SIMcheck**  
 - **SIMworks**  
 
 ---
