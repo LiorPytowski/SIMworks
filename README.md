@@ -163,7 +163,7 @@ SIMworks requires the following update sites:
 
 1. **Enable update sites**  
    Launch Fiji, navigate to:  
-   `Help › Update...` → `Manage Update Sites` → select the update sites listed above (including **DistanceAnalysis**, which provides DiAna).  
+   `Help › Update...` → `Manage Update Sites` → select the update sites listed above.  
 
 2. **Restart Fiji**  
    After restarting, **SIMworks** will appear in your main Fiji menu bar.  
