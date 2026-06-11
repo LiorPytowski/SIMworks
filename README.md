@@ -152,7 +152,7 @@ SIMworks requires the following update sites:
   - clij2  
   - clijx-assistant  
   - clijx-assistant-extensions
-- **DistanceAnalysis** *(provides the DiAna plugin, Gilles et al., 2017)*  
+- **DistanceAnalysis**
 - **IJBP-plugins**  
 - **ImageScience**  
 - **SIMworks**  
