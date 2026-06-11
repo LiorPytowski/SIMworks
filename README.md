@@ -1,4 +1,5 @@
 # SIMworks
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20643809.svg)](https://doi.org/10.5281/zenodo.20643809)
 
 **SIMworks – an integrated software suite for quality-controlled augmented quantitative structured illumination microscopy.**
 
