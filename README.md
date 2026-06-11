@@ -155,7 +155,8 @@ SIMworks requires the following update sites:
   - clijx-assistant-extensions
 - **DistanceAnalysis**
 - **IJBP-plugins**  
-- **ImageScience**  
+- **ImageScience**
+- **SIMcheck** 
 - **SIMworks**  
 
 ---
